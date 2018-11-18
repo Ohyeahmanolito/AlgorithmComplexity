@@ -14,8 +14,8 @@ public class StringToIntTableTest {
     public static void main(String[] args) {
         StringToIntTable ef = new StringToIntTable();
 
-        ef.put("sdfsdf", 1);
-        System.out.println(ef.getLength());
+        ef.put("mat", 1);
+        System.out.println(ef.get("ddfgdfg"));
 
     }
 

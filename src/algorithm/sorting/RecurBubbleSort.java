@@ -17,17 +17,18 @@ public class RecurBubbleSort {
     static void bubbleSort(int arr[], int n) {
 
         if (n == 1) {
-            return;
-        }
+            System.out.println("done");
+        } else {
 
-        for (int counter = 0; counter < n - 1; counter++) {
-            if (arr[counter] > arr[counter + 1]) {
-                int temp = arr[counter];
-                arr[counter] = arr[counter + 1];
-                arr[counter + 1] = temp;
+            for (int counter = 0; counter < n - 1; counter++) {
+                if (arr[counter] > arr[counter + 1]) {
+                    int temp = arr[counter];
+                    arr[counter] = arr[counter + 1];
+                    arr[counter + 1] = temp;
+                }
             }
+            bubbleSort(arr, n - 1);
         }
-        bubbleSort(arr, n - 1);
     }
 
     // Driver Method 

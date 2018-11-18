@@ -19,16 +19,24 @@ import java.util.Set;
 public class UnorderedSearching {
 
     public static void main(String[] args) {
-        hashMap();
+        //hashMap();
+
+        HashMap<String, String> dict = new HashMap<>();
+
+        dict.put("alphabet", "list of abcd");
+        dict.put("numbers", "list of 1234");
+
+        System.out.println(dict.getOrDefault("batman", "no such value"));
+
     }
 
     /**
-    1. Hashtable is synchronized, whereas HashMap is not. 
-        This makes HashMap better for non-threaded applications, 
-        as unsynchronized Objects typically perform better than synchronized ones.
-    
-    2. Hashtable does not allow null keys or values.  
-    HashMap allows one null key and any number of null values.*
+     * 1. Hashtable is synchronized, whereas HashMap is not. This makes HashMap
+     * better for non-threaded applications, as unsynchronized Objects typically
+     * perform better than synchronized ones.
+     *
+     * 2. Hashtable does not allow null keys or values. HashMap allows one null
+     * key and any number of null values.*
      */
     public static void hashTable() {
 
